@@ -1,0 +1,20 @@
+/*Btn outline*/
+.btn-outline {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+
+  height: 48px;
+  border: 1px solid var(--blackpure);
+  background-color: var(--white);
+  color: var(--blackpure);
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+.btn-outline:hover {
+  opacity: 0.8;
+}
+.btn-outline:active {
+  position: relative;
+  top: 1px;
+}

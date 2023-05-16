@@ -1,0 +1,31 @@
+/*projects*/
+.project {
+  max-width: 370px;
+  background-color: var(--page-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+.project_img {
+  border-radius: 10px;
+}
+.project_titel {
+  padding: 15px 20px 25px;
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 700;
+  color: var(--page-text-color);
+}
+.linkProject {
+  transition: opacity 0.2s ease-in;
+}
+.linkProject:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 620px) {
+
+  .project_titel {
+    font-size: 22px;
+  }
+}

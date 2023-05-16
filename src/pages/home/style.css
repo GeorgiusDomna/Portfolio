@@ -1,0 +1,58 @@
+/*header*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  min-height: 695px;
+
+  background-color: var(--page-bg);
+  background-image: url('../../img/header-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+
+  color: var(--page-text-color);
+  text-align: center;
+}
+.header_wrapper {
+  padding: 0 15px;
+  height: 100%;
+  max-width: 660px;
+}
+.header_titel {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.header_titel strong {
+  font-size: 60px;
+  font-weight: 700;
+}
+.header_titel em {
+  font-style: normal;
+  color: var(--accent);
+}
+.header_text {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.333em;
+}
+.header_text p + p {
+  margin-top: 1em;
+}
+
+@media (max-width: 620px) {
+  
+  .header {
+    min-height: unset;
+  }
+
+  .header_titel {
+    font-size: 30px;
+  }
+  .header_titel strong {
+    font-size: 40px;
+  }
+}
