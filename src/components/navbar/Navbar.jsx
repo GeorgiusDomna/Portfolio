@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="nav">
       <div className="container">
         <div className="nav-row">
-          <NavLink to="/" className="logo"><strong>JavaScript dev.</strong> Portfolio</NavLink>
+          <NavLink to="/" className="logo"><strong>Forontend dev.</strong> Portfolio</NavLink>
           <BtnDarkMode />
           <ul className="nav-list">
             <li className="nav-list_item"><NavLink to="/projects" className={({isActive}) => isActive ? activeLink : normalLink}>Projects</NavLink></li>

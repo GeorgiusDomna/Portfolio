@@ -11,7 +11,7 @@ const Home = () => {
             a frontend developer
           </h1>
           <div className="header_text">
-            <p>my future works will be posted on this website as long as there are fake works here, but is site is real.</p>
+            <p>my works are published on this site, by the way, the site itself is also made by me</p>
           </div>
           <a href="https://hh.ru/resume/1bc063bbff08f9869b0039ed1f6d6a72697057"
             target='_blank'

@@ -11,6 +11,9 @@
   border-radius: 5px;
   padding: 12px 20px;
 }
+.btn-outline_logo {
+  width: 24px;
+}
 .btn-outline:hover {
   opacity: 0.8;
 }

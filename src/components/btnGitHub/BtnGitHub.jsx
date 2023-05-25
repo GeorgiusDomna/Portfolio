@@ -1,11 +1,10 @@
-import iconGitHub from './git-btn.svg';
 import './style.css';
 
-const BtnGitHub = ({link}) => {
+const BtnGitHub = ({link, name, icon}) => {
   return ( 
     <a href={link} target='_blank' rel='noneferrer' className="btn-outline">
-      <img src={iconGitHub} alt="" />
-      GitHub repo
+      <img className='btn-outline_logo' src={icon} alt="logo" />
+      {name}
     </a>  
   );
 }
