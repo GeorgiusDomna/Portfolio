@@ -7,7 +7,7 @@ import imgBig02 from './../img/projects/big/02.webp';
 export const projects = [
   {
     titel: "Photographer's portfolio",
-    skills: 'JavaScript, React, CSS, HTML',
+    stackFront: 'JavaScript, React, CSS, HTML',
     img: img01,
     imgBig: imgBig01,
     gitHubLink: 'https://github.com/GeorgiusDomna/Portfolio-Photograph',
@@ -15,10 +15,11 @@ export const projects = [
   },
   {
     titel: "Weather forecast",
-    skills: 'JavaScript, React, CSS/SASS, HTML',
+    stackFront: 'React, JavaScript, GraphQL, CSS/SASS, HTML',
+    stackBack: 'Next.js, JavaScript, Apollo Server',
     img: img02,
     imgBig: imgBig02,
-    gitHubLink: 'https://github.com/GeorgiusDomna/weather',
-    vercelLink: 'https://weather-two-gamma.vercel.app/',
+    gitHubLink: 'https://github.com/GeorgiusDomna/weather-fullstack',
+    vercelLink: 'https://weather-nine-teal.vercel.app/',
   },
 ]

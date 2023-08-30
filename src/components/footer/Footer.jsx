@@ -10,17 +10,17 @@ const Footer = () => {
       <div className="footer_wrapper">    
         <ul className="social">
           <li className="solcial_item">
-            <a className='linkBio' target='_blank' rel='noneferrer' href="https://vk.com/domaning"><img src={vk} alt="link" /></a>
+            <a className='linkBio' target='_blank' rel='noreferrer' href="https://vk.com/domaning"><img src={vk} alt="link" /></a>
           </li>
           <li className="solcial_item">
-            <a className='linkBio' target='_blank' rel='noneferrer' href="https://www.instagram.com/viceversa_oqecald/"><img src={inst} alt="link" /></a>
+            <a className='linkBio' target='_blank' rel='noreferrer' href="https://www.instagram.com/viceversa_oqecald/"><img src={inst} alt="link" /></a>
           </li>
           <li className="solcial_item">
-            <a className='linkBio' target='_blank' rel='noneferrer' href="https://github.com/GeorgiusDomna"><img src={git} alt="link" /></a>
+            <a className='linkBio' target='_blank' rel='noreferrer' href="https://github.com/GeorgiusDomna"><img src={git} alt="link" /></a>
           </li>
         </ul>
         <div className="copyright">
-          <p>©️ 2023 VozmiteMenyaNaRabotu.pls</p>
+          <a className='linkBio' target='_blank' rel='noreferrer' href="https://github.com/GeorgiusDomna">created by GeorgiusDomna</a>
         </div>
       </div>
     </footer>

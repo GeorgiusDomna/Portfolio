@@ -8,11 +8,10 @@ const Contacts = () => {
           <li className="content-list_item">
             <h2 className="titel-2">Phone numbers</h2>
             <p><b>ru:</b> <a href="tel:+79299273359">+7 (929) 927-33-59</a></p>
-            <p><b>ge:</b> <a href="tel:+995599503975">+995 (59) 950-39-75</a></p>
           </li>
           <li className="content-list_item">
             <h2 className="titel-2">Telegram</h2>
-            <p>https://t.me/<a href="https://t.me/domaning" target='_blank' rel='noneferrer'>domaning</a></p>
+            <p>https://t.me/<a href="https://t.me/domaning" target='_blank' rel='noreferrer'>domaning</a></p>
           </li>
           <li className="content-list_item">
             <h2 className="titel-2">Email</h2>

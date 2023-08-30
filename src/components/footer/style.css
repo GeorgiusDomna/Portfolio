@@ -17,9 +17,12 @@
   align-items: center;
 }
 .copyright {
-  font-size: 16px;
-
+  font-size: 15px;
 }
+.copyright .linkBio {
+  color: white;
+}
+
 .linkBio {
   transition: opacity 0.2s ease-in;
 }

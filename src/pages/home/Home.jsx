@@ -11,13 +11,13 @@ const Home = () => {
             a frontend developer
           </h1>
           <div className="header_text">
-            <p>my works are published on this site, by the way, the site itself is also made by me</p>
+            <p>examples of my work are published on this site</p>
           </div>
           <a href="https://hh.ru/resume/1bc063bbff08f9869b0039ed1f6d6a72697057"
             target='_blank'
-            rel='noneferrer'
+            rel='noreferrer'
             className="btn">
-              Download CV
+              View CV
           </a>
         </div>
       </header>

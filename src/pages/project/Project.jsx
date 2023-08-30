@@ -8,7 +8,7 @@ import './style.css';
 const Project = () => {
 
   const {id} = useParams();
-  const project = projects [id];
+  const project = projects[id];
 
   return (
     <main className="selection">
@@ -16,9 +16,14 @@ const Project = () => {
         <div className="project-details">
           <h1 className="titel-1">{project.titel}</h1>
           <img src={project.imgBig} alt="" className="project-details_cover" />
-          <div className="project-details_desc">
-            <p>{project.skills}</p>
-          </div>
+          {project.stackFront && <div className="project-details_desc">
+            <h3 className="project-details_desc-title">Frontend:</h3>
+            <p>{project.stackFront}</p>
+          </div>}
+          {project.stackBack && <div className="project-details_desc">
+            <h3 className="project-details_desc-title">Backend:</h3>
+            <p>{project.stackBack}</p>
+          </div>}
           <div className="btnsLink">
             {project.gitHubLink && <BtnGitHub name='GitHub repo' link={project.gitHubLink} icon={gitHub} />}
             {project.gitHubLink && <BtnGitHub name='Vercel deploy' link={project.vercelLink} icon={vercel} />}
