@@ -11,7 +11,8 @@ const Skills = () => {
           </li>
           <li className="content-list_item">
             <h2 className="titel-2">Frontend stack</h2>
-            <p>React, GraphQL, preprocessors (Sass/SCSS), CSS Modules, HTML</p>
+            <p>React, Redux, GraphQL, Apollo Client,<br/>
+            CSS Modules, HTML, preprocessors (Sass/SCSS)</p>
           </li>
           <li className="content-list_item">
             <h2 className="titel-2">Backend stack</h2>
@@ -19,7 +20,7 @@ const Skills = () => {
           </li>
           <li className="content-list_item">
             <h2 className="titel-2">Other</h2>
-            <p>Git, OOP</p>
+            <p>Git</p>
           </li>
         </ul>     
       </div>
