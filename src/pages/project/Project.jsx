@@ -26,7 +26,7 @@ const Project = () => {
           </div>}
           <div className="btnsLink">
             {project.gitHubLink && <BtnGitHub name='GitHub repo' link={project.gitHubLink} icon={gitHub} />}
-            {project.gitHubLink && <BtnGitHub name='Vercel deploy' link={project.vercelLink} icon={vercel} />}
+            {project.vercelLink && <BtnGitHub name='Vercel deploy' link={project.vercelLink} icon={vercel} />}
           </div>
         </div>
       </div>

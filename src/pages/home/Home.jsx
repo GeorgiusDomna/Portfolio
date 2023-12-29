@@ -13,7 +13,7 @@ const Home = () => {
           <div className="header_text">
             <p>examples of my work are published on this site</p>
           </div>
-          <a href="https://hh.ru/resume/1bc063bbff08f9869b0039ed1f6d6a72697057"
+          <a href="https://hh.ru/resume/0dd2ce3fff0c68ffe00039ed1f7a316e6a7771"
             target='_blank'
             rel='noreferrer'
             className="btn">
