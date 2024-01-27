@@ -19,6 +19,8 @@
   --title-1: var(--accent);
   --sub-bg: var(--white);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+  --dot-color: rgb(170, 170, 170);
+  --dot-color-active: var(--accent);
 }
 .dark {
   /* Dark mode */
@@ -28,6 +30,9 @@
 
   --sub-bg: var(--black);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 1);
+
+  --dot-color: gray;
+  --dot-color-active: #FFFFFF;
 }
 #root, .App {
   display: flex;

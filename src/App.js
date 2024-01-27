@@ -6,7 +6,7 @@ import Projects from './pages/projects/Projects';
 import Home from './pages/home/Home';
 import Contacts from './pages/contacts/Contacts';
 import Skills from './pages/skills/Skills';
-import Project from './pages/project/Project';
+import Project from './pages/projects/project/Project';
 import './styles/main.css';
 
 function App() {

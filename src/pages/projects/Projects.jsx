@@ -9,7 +9,7 @@ const Projects = () => {
       key={index}
       index={index}
       titel={project.titel}
-      img={project.img}
+      img={project.imgPreview}
     />
   })
   
