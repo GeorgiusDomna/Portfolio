@@ -4,7 +4,7 @@ import BtnGitHub from "../../../components/btnGitHub/BtnGitHub";
 import Slider from "../../../components/slider/Slider";
 
 import { projects } from "../../../helpers/projectList";
-import { IProject } from "../../../interfaces/IProject";
+import { IProject } from "../../../interfaces/Iproject";
 
 import gitHub from '../../../assets/icons/git-btn.svg';
 import vercel from '../../../assets/icons/vercel.svg';

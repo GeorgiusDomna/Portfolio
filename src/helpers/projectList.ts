@@ -1,4 +1,4 @@
-import { IProject } from '../interfaces/IProject';
+import { IProject } from '../interfaces/Iproject';
 
 import todolistMini from '../assets/projects/mini/todolist.webp';
 import todolistBig from '../assets/projects/big/todolist/todolist.webp';
