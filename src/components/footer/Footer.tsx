@@ -1,9 +1,9 @@
-import vk from '../../img/icons/VK.svg';
-import inst from '../../img/icons/inst.svg';
-import git from '../../img/icons/Git.svg';
+import vk from '../../assets/icons/VK.svg';
+import inst from '../../assets/icons/inst.svg';
+import git from '../../assets/icons/Git.svg';
 import './style.css';
 
-const Footer = () => {
+const Footer: React.FC = () => {
 
   return (
     <footer className="footer">

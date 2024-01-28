@@ -9,7 +9,7 @@ import Skills from './pages/skills/Skills';
 import Project from './pages/projects/project/Project';
 import './styles/main.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Router>

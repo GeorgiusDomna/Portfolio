@@ -1,15 +1,18 @@
 import { useParams } from "react-router-dom";
-import Slider from "./slider/Slider";
-import { projects } from "../../../helpers/projectList";
+
 import BtnGitHub from "../../../components/btnGitHub/BtnGitHub";
-import gitHub from '../../../img/icons/git-btn.svg';
-import vercel from '../../../img/icons/vercel.svg';
+import Slider from "../../../components/slider/Slider";
+
+import { projects } from "../../../helpers/projectList";
+import { IProject } from "../../../interfaces/IProject";
+
+import gitHub from '../../../assets/icons/git-btn.svg';
+import vercel from '../../../assets/icons/vercel.svg';
 import './style.css';
 
-const Project = () => {
-
+const Project: React.FC = () => {
   const {id} = useParams();
-  const project = projects[id];
+  const project: IProject = projects[Number(id)];
 
   return (
     <main className="selection">

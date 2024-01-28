@@ -1,4 +1,4 @@
-const Contacts = () => {
+const Contacts: React.FC = () => {
   
   return (
     <main className="selection">

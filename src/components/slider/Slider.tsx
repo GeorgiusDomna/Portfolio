@@ -1,12 +1,17 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { IProjectImage } from '../../interfaces/Iproject';
 import './style.css';
 
-const Slider = ({sliderList}) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const isPageMany = sliderList.length > 1;
-  let dots = [];
+interface SliderProps {
+  sliderList: IProjectImage[];
+}
 
-  const switchSlider = useCallback((action) => {
+const Slider: React.FC<SliderProps> = ({sliderList}) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const isPageMany: boolean = sliderList.length > 1;
+  let dots: JSX.Element[] = [];
+
+  const switchSlider = useCallback((action: boolean) => {
     setCurrentIndex(prevIndex => (
       action
         ? (prevIndex + 1 === sliderList.length ? 0 : prevIndex + 1)
@@ -16,14 +21,14 @@ const Slider = ({sliderList}) => {
   
   useEffect(() => {
     if (isPageMany) {
-      const clickhandler = (event) => {
+      const clickhandler = (event: KeyboardEvent) => {
         event.key === 'ArrowLeft' && switchSlider(false)
         event.key === 'ArrowRight' && switchSlider(true);
       }
 
       window.addEventListener('keyup', clickhandler);
       return () => window.removeEventListener('keyup', clickhandler);
-    };
+    }
   }, [switchSlider, isPageMany])
 
   if (isPageMany) {
@@ -51,7 +56,7 @@ const Slider = ({sliderList}) => {
             loading="lazy"
             src={sliderList[currentIndex].img}
             alt="example of the work"
-            onClick={() => switchSlider('next')}
+            onClick={() => switchSlider(true)}
           />
         </div>
         {isPageMany &&

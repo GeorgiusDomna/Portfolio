@@ -1,6 +1,6 @@
 import './style.css';
 
-const Home = () => {
+const Home: React.FC = () => {
 
   return (
     <>

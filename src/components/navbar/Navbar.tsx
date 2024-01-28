@@ -2,7 +2,7 @@ import BtnDarkMode from '../btnDarkMode/BtnDarkMode';
 import { NavLink } from 'react-router-dom';
 import './style.css';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
 
   const activeLink = 'nav-list_link nav-list_link--active';
   const normalLink = 'nav-list_link';

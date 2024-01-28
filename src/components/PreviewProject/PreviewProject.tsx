@@ -1,7 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import './style.css';
 
-const Project = ({index, titel, img}) => {
+interface IPreviewProjectProps {
+  index: number;
+  titel: string;
+  img: string;
+}
+
+const PreviewProject: React.FC<IPreviewProjectProps> = ({index, titel, img}) => {
   
   return (
     <NavLink className='linkProject' to={`/project/${index}`}>
@@ -13,4 +19,4 @@ const Project = ({index, titel, img}) => {
   );
 }
  
-export default Project;
+export default PreviewProject;

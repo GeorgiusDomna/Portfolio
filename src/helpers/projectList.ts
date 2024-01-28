@@ -1,26 +1,28 @@
-import todolistMini from './../img/projects/mini/todolist.webp';
-import todolistBig from './../img/projects/big/todolist/todolist.webp';
+import { IProject } from '../interfaces/IProject';
 
-import rosatomMin from './../img/projects/mini/rosatom.webp';
-import addApplication from './../img/projects/big/rosatom/addApplication.webp';
-import addDocument from './../img/projects/big/rosatom/addDocument.webp';
-import addUser from './../img/projects/big/rosatom/addUser.webp';
-import viewDeparts from './../img/projects/big/rosatom/viewDeparts.webp';
-import login from './../img/projects/big/rosatom/login.webp';
-import registration from './../img/projects/big/rosatom/registration.webp';
-import viewAppsOnReview from './../img/projects/big/rosatom/viewAppsOnReview.webp';
-import viewImage from './../img/projects/big/rosatom/viewImage.webp';
-import viewDocuments from './../img/projects/big/rosatom/viewDocuments.webp';
-import viewPDF from './../img/projects/big/rosatom/viewPDF.webp';
-import viewUserInfo from './../img/projects/big/rosatom/viewUserInfo.webp';
-import viewUsers from './../img/projects/big/rosatom/viewUsers.webp';
-import voiting from './../img/projects/big/rosatom/voiting.webp';
-import localization from './../img/projects/big/rosatom/localization.webp';
+import todolistMini from '../assets/projects/mini/todolist.webp';
+import todolistBig from '../assets/projects/big/todolist/todolist.webp';
 
-import forecastMini from './../img/projects/mini/forecast.webp';
-import forecastBig from './../img/projects/big/forecast/forecast.webp';
+import rosatomMin from '../assets/projects/mini/rosatom.webp';
+import addApplication from '../assets/projects/big/rosatom/addApplication.webp';
+import addDocument from '../assets/projects/big/rosatom/addDocument.webp';
+import addUser from '../assets/projects/big/rosatom/addUser.webp';
+import viewDeparts from '../assets/projects/big/rosatom/viewDeparts.webp';
+import login from '../assets/projects/big/rosatom/login.webp';
+import registration from '../assets/projects/big/rosatom/registration.webp';
+import viewAppsOnReview from '../assets/projects/big/rosatom/viewAppsOnReview.webp';
+import viewImage from '../assets/projects/big/rosatom/viewImage.webp';
+import viewDocuments from '../assets/projects/big/rosatom/viewDocuments.webp';
+import viewPDF from '../assets/projects/big/rosatom/viewPDF.webp';
+import viewUserInfo from '../assets/projects/big/rosatom/viewUserInfo.webp';
+import viewUsers from '../assets/projects/big/rosatom/viewUsers.webp';
+import voiting from '../assets/projects/big/rosatom/voiting.webp';
+import localization from '../assets/projects/big/rosatom/localization.webp';
 
-export const projects = [
+import forecastMini from '../assets/projects/mini/forecast.webp';
+import forecastBig from '../assets/projects/big/forecast/forecast.webp';
+
+export const projects: IProject[] =[
   {
     titel: "ТЗ: Todo List на чистом JS",
     stackFront: 'JavaScript, HTML, CSS',

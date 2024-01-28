@@ -1,11 +1,12 @@
-import Project from '../../components/project/Project';
+import React from 'react';
+import PreviewProject from '../../components/PreviewProject/PreviewProject';
 import { projects } from '../../helpers/projectList';
 import './style.css';
 
-const Projects = () => {
+const Projects: React.FC = () => {
 
-  let projectsList = projects.map((project, index) => {
-    return <Project
+  const projectsList = projects.map((project, index) => {
+    return <PreviewProject
       key={index}
       index={index}
       titel={project.titel}
