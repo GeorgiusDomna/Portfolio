@@ -1,0 +1,21 @@
+{
+  "Portfolio": "Portfolio",
+  "Projects": "Projects",
+  "Skills": "Skills",
+  "Contacts": "Contacts",
+  "Page_contacts": {
+    "phone": "Phone number",
+    "tgram": "Telegram",
+    "email": "Email"
+  },
+  "Page_skills": {
+    "langs": "Langs",
+    "front": "Frontend stack",
+    "back": "Backend stack",
+    "other": "Other",
+    "soft": "Soft skills"
+  },
+  "footer": {
+    "created": "created by GeorgiusDomna"
+  }
+}

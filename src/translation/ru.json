@@ -1,0 +1,24 @@
+{
+  "Portfolio": "Портфолио",
+  "Projects": "Проекты",
+  "Skills": "Навыки",
+  "Contacts": "Контакты",
+  "Page_contacts": {
+    "phone": "Тел. номер",
+    "tgram": "Телеграм",
+    "email": "Эл. почта"
+  },
+  "Page_skills": {
+    "langs": "Языки",
+    "front": "Фронтенд стек",
+    "back": "Бэкенд стек",
+    "other": "Остальные навыки",
+    "soft": "Гибкие навыки",
+    "Soft_skills": {
+      "disc": ""
+    }
+  },
+  "footer": {
+    "created": "сайт создан GeorgiusDomna"
+  }
+}
