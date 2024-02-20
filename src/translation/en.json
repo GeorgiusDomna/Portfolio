@@ -1,0 +1,56 @@
+{
+  "Portfolio": "Portfolio",
+  "Projects": "Projects",
+  "Skills": "Skills",
+  "Contacts": "Contacts",
+  "Page_main": {
+    "title": "<0>Hi, my name is <1>Georgii</1></0><br/> a frontend developer",
+    "disc": "examples of my work are published on this site",
+    "CV": "View CV"
+  },
+  "Page_skills": {
+    "langs": "Langs",
+    "front": "Frontend stack",
+    "front_preproc": "preprocessors (Sass/SCSS), CSS Modules",
+    "front_SPA": "Experience in building Single Page Applications",
+    "back": "Backend stack",
+    "other": "Other",
+    "soft": "Soft skills",
+    "soft_disc": "Agile, SCRUM, <br /> experience working in a team,<br /> ability to independently search for and learn information, <br /> strong communication skills, <br /> high level of self-organization and adaptability, <br /> stress resilience."
+  },
+  "Page_contacts": {
+    "phone": "Phone number",
+    "tgram": "Telegram",
+    "email": "Email"
+  },
+  "footer": {
+    "created": "created by GeorgiusDomna"
+  },
+  "projects": {
+    "todo": {
+      "title": "TT: Todo List in Vanilla JS"
+    },
+    "voiting": {
+      "title": "Electronic Approval Systems and Document Management",
+      "imgDisc": {
+        "viewDeparts": "Department management page",
+        "viewUsers": "View employees in department",
+        "addUser": "Add employee",
+        "viewUserInfo": "View employee profile",
+        "login": "Login",
+        "registration": "Registration",
+        "viewDocuments": "View document list",
+        "addDocument": "Add document",
+        "viewImage": "View images",
+        "viewPDF": "View PDF files",
+        "addApplication": "Create document approval voting",
+        "viewAppsOnReview": "View documents under review for voting",
+        "voiting": "Vote for/against document under review",
+        "localization": "Application localization EN/RU"
+      }
+    },
+    "weather": {
+      "title": "Weather forecast"
+    }
+  }
+}

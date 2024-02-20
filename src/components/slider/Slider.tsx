@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
-import { IProjectImage } from '../../interfaces/Iproject';
+import { useTranslation } from 'react-i18next';
+import { IProjectImage } from '../../interfaces/IProject';
 import './style.css';
 
 interface SliderProps {
@@ -8,6 +9,7 @@ interface SliderProps {
 
 const Slider: React.FC<SliderProps> = ({sliderList}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useTranslation();
   const isPageMany: boolean = sliderList.length > 1;
   let dots: JSX.Element[] = [];
 
@@ -64,7 +66,7 @@ const Slider: React.FC<SliderProps> = ({sliderList}) => {
           &gt;
         </button>}
       </div>
-      {sliderList[currentIndex].disc && <p className='gallerey-library_disc'>{sliderList[currentIndex].disc}</p>}
+      {sliderList[currentIndex].disc && <p className='gallerey-library_disc'>{t(sliderList[currentIndex].disc)}</p>}
       {isPageMany &&
         <div className="dot-container">
           {dots}

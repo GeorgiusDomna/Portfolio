@@ -2,8 +2,10 @@ import vk from '../../assets/icons/VK.svg';
 import inst from '../../assets/icons/inst.svg';
 import git from '../../assets/icons/Git.svg';
 import './style.css';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
 
   return (
     <footer className="footer">
@@ -20,7 +22,7 @@ const Footer: React.FC = () => {
           </li>
         </ul>
         <div className="copyright">
-          <a className='linkBio' target='_blank' rel='noreferrer' href="https://github.com/GeorgiusDomna">created by GeorgiusDomna</a>
+          <a className='linkBio' target='_blank' rel='noreferrer' href="https://github.com/GeorgiusDomna">{t('footer.created')}</a>
         </div>
       </div>
     </footer>

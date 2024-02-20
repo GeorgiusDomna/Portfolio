@@ -1,5 +1,4 @@
 .dark-mode-btn {
-  order: 9;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -31,7 +30,6 @@
 }
 
 @media (max-width: 620px) {
-
   .dark-mode-btn {
     order: 0;
   }
