@@ -11,7 +11,7 @@ const LangSwitch: React.FC = () => {
   const { i18n } = useTranslation();
 
   return (
-    <select className='langs' onChange={(e) => i18n.changeLanguage(e.target.value)}>
+    <select className='langs' value={i18n.resolvedLanguage} onChange={(e) => i18n.changeLanguage(e.target.value)}>
       {Object.keys(lngs).map((lng) => (
         <option
           key={lng}

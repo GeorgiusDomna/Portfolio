@@ -1,16 +1,18 @@
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import BtnGitHub from "../../../components/btnGitHub/BtnGitHub";
 import Slider from "../../../components/slider/Slider";
 
 import { projects } from "../../../helpers/projectList";
-import { IProject } from "../../../interfaces/Iproject";
+import { IProject } from "../../../interfaces/IProject";
 
 import gitHub from '../../../assets/icons/git-btn.svg';
 import vercel from '../../../assets/icons/vercel.svg';
 import './style.css';
 
 const Project: React.FC = () => {
+  const { t } = useTranslation();
   const {id} = useParams();
   const project: IProject = projects[Number(id)];
 
@@ -18,7 +20,7 @@ const Project: React.FC = () => {
     <main className="selection">
       <div className="container">
         <div className="project-details">
-          <h1 className="titel-1">{project.titel}</h1>
+          <h1 className="titel-1">{t(project.titel)}</h1>
           <Slider sliderList={project.imgBig} />
           {project.stackFront &&
             <div className="project-details_desc">

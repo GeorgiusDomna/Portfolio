@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Skills: React.FC = () => {
   const { t } = useTranslation();
@@ -21,10 +21,10 @@ const Skills: React.FC = () => {
               React, MobX, <br />
               Vite, CRA, <br />
               React Router, GraphQL, Apollo Client, <br />
-              preprocessors (Sass/SCSS), CSS Modules <br />
+              {t('Page_skills.front_preproc')} <br />
               Formik, yup, i18next,<br />
               Prettier, ESLint, <br />
-              Опыт построения Single Page Applications
+              {t('Page_skills.front_SPA')}
             </p>
           </li>
           <li className="content-list_item">
@@ -38,12 +38,7 @@ const Skills: React.FC = () => {
           <li className="content-list_item">
             <h2 className="titel-2">{t('Page_skills.soft')}</h2>
             <p>
-              Agile, SCRUM, <br />
-              опыт работы в команде,<br />
-              навык самостоятельного поиска и изучения информации, <br />
-              хорошие коммуникативные навыки, <br />
-              высокий уровень самоорганизованности и обучаемости, <br />
-              стрессоустойчивость
+              <Trans i18nKey='Page_skills.soft_disc' />
             </p>
           </li>
         </ul>     
