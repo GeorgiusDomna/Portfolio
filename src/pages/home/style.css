@@ -1,5 +1,5 @@
 /*header*/
-.header {
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,44 +15,41 @@
   color: var(--page-text-color);
   text-align: center;
 }
-.header_wrapper {
+.main_wrapper {
   padding: 0 15px;
   height: 100%;
   max-width: 660px;
 }
-.header_titel {
+.main_titel {
   margin-bottom: 20px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.4;
 }
-.header_titel strong {
+.main_titel strong {
   font-size: 60px;
   font-weight: 700;
 }
-.header_titel em {
+.main_titel em {
   font-style: normal;
   color: var(--accent);
 }
-.header_text {
+.main_text {
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.333em;
 }
-.header_text p + p {
+.main_text p + p {
   margin-top: 1em;
 }
 
-@media (max-width: 620px) {
-  
-  .header {
-    min-height: unset;
-  }
 
-  .header_titel {
+@media (max-width: 620px) {
+
+  .main_titel {
     font-size: 30px;
   }
-  .header_titel strong {
+  .main_titel strong {
     font-size: 40px;
   }
 }

@@ -2,33 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;700&display=swap');
 
 :root {
-  --blackpure: #000;
-  --black: #070707;
-  --black-border: #26292D;
+  --light-bg: linear-gradient(to left, #dbe3e9 , #507092);
+  --light-bg-sub: linear-gradient(to left, #dbe3e954 , #50709250);
+  --light-footer-bg: linear-gradient(to left, #a3aaaf , #3d536b);
+  --dark-bg: linear-gradient(to right, #423f29, #2a292c);
+  --dark-bg-sub: linear-gradient(to right, #423f2952, #2a292c4d);
+  --dark-footer-bg: linear-gradient(to right, #272518, #1d1d1f);
+  --blackpure: #14293f;
+  --black-border: #a3a3a3b7;
   --white: #FFFFFF;
   --puroul: #5C62EC;
-  --red: rgb(202, 26, 111);
+  --dark-blue: #1d3b9c;
   
   --dark-border: var(--black-border);
   --header-text: var(--white);
-  --accent: var(--puroul);
+  --accent: var(--dark-blue);
 
   /* Light mode */
+  --page-bg: var(--light-bg);
+  --page-bg-sub: var(--light-bg-sub);
+  --footer-bg: var(--light-footer-bg);
   --page-text-color: var(--blackpure);
-  --dark-bg: var(--black);
   --title-1: var(--accent);
-  --sub-bg: var(--white);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
-  --dot-color: rgb(170, 170, 170);
+  --dot-color: rgb(255, 255, 255);
   --dot-color-active: var(--accent);
 }
 .dark {
   /* Dark mode */
-  --page-bg: #141416;
+  --accent: var(--puroul);
+  --page-bg: var(--dark-bg);
+  --page-bg-sub: var(--dark-bg-sub);
+  --footer-bg: var(--dark-footer-bg);
   --page-text-color: var(--white);
   --title-1: var(--white);
 
-  --sub-bg: var(--black);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 1);
 
   --dot-color: gray;
@@ -37,12 +45,13 @@
 #root, .App {
   display: flex;
   flex-direction: column;
+  padding-top: 35px;
   min-height: 100vh;
   font-family: 'DM Sans', sans-serif;
   letter-spacing: -0.5px;
   color: var(--page-text-color);
 
-  background-color: var(--page-bg);
+  background: var(--page-bg);
   color: var(--page-text-color);
 }
 
@@ -114,7 +123,16 @@
   margin-top: 0.5em;
 }
 
-
+@media (max-width: 752px) {
+  #root, .App {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 429px) {
+  #root, .App {
+    padding-top: 80px;
+  }
+}
 @media (max-width: 620px) {
 
   /* Content */

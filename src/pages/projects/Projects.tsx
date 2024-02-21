@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
     <main className="selection">
       <div className="container">
         <h2 className="titel-1">{t('Projects')}</h2>
-        <ul className="profects">
+        <ul className="projects">
           {projectsList}
         </ul>
       </div>
