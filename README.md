@@ -5,15 +5,14 @@ This project is my portfolio where you can see examples of my code and learn abo
 
 ## Deployment
 
-https://portfolio-georgiusdomna.vercel.app/
-
+[![Vercel Deploy](https://img.shields.io/badge/Vercel%20Deploy-black?style=flat-square&logo=vercel&link=https://portfolio-georgiusdomna.vercel.app/)](https://portfolio-georgiusdomna.vercel.app/)
 
 ## Tech Stack
 
 **Frontend Kit:** 
 [![React](https://img.shields.io/badge/React-077EA4?style=flat-square&logo=React&logoColor=white&link=https://react.dev/)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat-square&logo=TypeScript&logoColor=white&link=https://www.typescriptlang.org/)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-blue?style=flat-square&logo=Vite&logoColor=white&link=https://vitejs.dev/)](https://vitejs.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5C2C7B?style=flat-square&logo=Vite&logoColor=white&link=https://vitejs.dev/)](https://vitejs.dev/)
 
 
 **Markup Styling:**
@@ -22,7 +21,6 @@ https://portfolio-georgiusdomna.vercel.app/
 
 **Libraries:**
 [![i18next](https://img.shields.io/badge/i18next-229D8F?style=flat-square&logo=i18next&logoColor=white&link=https://www.i18next.com/)](https://www.i18next.com/)
-
 ## Run Locally
 
 clone the project
