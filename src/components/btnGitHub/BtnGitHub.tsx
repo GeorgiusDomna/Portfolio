@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './style.css';
 
 interface BtnGitHubProps {
@@ -8,7 +9,11 @@ interface BtnGitHubProps {
 const BtnGitHub: React.FC<BtnGitHubProps> = ({link, name, icon}) => {
   return ( 
     <a href={link} target='_blank' rel='noneferrer' className="btn-outline">
-      <img className='btn-outline_logo' src={icon} alt="logo" />
+      <Image
+        alt="logo" 
+        src={icon} 
+        className='btn-outline_logo' 
+      />
       {name}
     </a>  
   );

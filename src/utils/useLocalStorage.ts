@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from "react";
 
 /**
@@ -10,6 +12,7 @@ import { useEffect, useState } from "react";
  * @returns {boolean} - Возвращает значение из локального хранилища или значение по умолчанию.
  */
 const getStorageValue = (key: string, defaultValue: boolean) => {
+  if (typeof window === "undefined") return false;
   const saved = localStorage.getItem(key);
   
   return saved ? JSON.parse(saved) : defaultValue;
@@ -25,11 +28,9 @@ const getStorageValue = (key: string, defaultValue: boolean) => {
  * @returns {[boolean, React.Dispatch<React.SetStateAction<boolean>>]} - Возвращает массив, содержащий текущее
  * значение из локального хранилища и функцию для его обновления.
  */
-export const useLocalStorage = (key: string, defaultValue: boolean) => {
-
-  const [value, setValue] = useState(() => {
-    return getStorageValue(key, defaultValue)
-  })
+export const useLocalStorage = (key: string, defaultValue: boolean): [boolean, React.Dispatch<React.SetStateAction<boolean>>] => {
+  const [value, setValue] = useState(getStorageValue(key, defaultValue))
+  
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);

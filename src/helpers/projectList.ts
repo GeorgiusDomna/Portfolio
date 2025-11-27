@@ -26,7 +26,7 @@ const voitingImg = 'projects.voiting.imgDisc.';
 
 export const projects: IProject[] =[
   {
-    titel: "projects.todo.title",
+    titel: "ТЗ: Todo List на чистом JS",
     stackFront: 'JavaScript, HTML, CSS',
     imgPreview: todolistMini,
     imgBig: [
@@ -36,29 +36,30 @@ export const projects: IProject[] =[
     vercelLink: 'https://todo-list-one-lyart.vercel.app/',
   },
   {
-    titel: "projects.voiting.title",
+    titel: "Cистемы электронного согласования и управления документооборотом",
     stackFront: 'React, TypeScript, MobX, Vite, React-router, CSS Modules, Formik, yup, JSZip, PDF.js, i18next, Prettier, ESLint',
     imgPreview: rosatomMin,
     imgBig: [
-      { img: viewDeparts, disc: voitingImg + 'viewDeparts' },
-      { img: viewUsers, disc: voitingImg + 'viewUsers' },
-      { img: addUser, disc: voitingImg + 'addUser' },
-      { img: viewUserInfo, disc: voitingImg + 'viewUserInfo' },
-      { img: login, disc: voitingImg + 'login' },
-      { img: registration, disc: voitingImg + 'registration' },
-      { img: viewDocuments, disc: voitingImg + 'viewDocuments' },
-      { img: addDocument, disc: voitingImg + 'addDocument' },
-      { img: viewImage, disc: voitingImg + 'viewImage' },
-      { img: viewPDF, disc: voitingImg + 'viewPDF' },
-      { img: addApplication, disc: voitingImg + 'addApplication' },
-      { img: viewAppsOnReview, disc: voitingImg + 'viewAppsOnReview' },
-      { img: voiting, disc: voitingImg + 'voiting' },
-      { img: localization, disc: voitingImg + 'localization' }
+      // { img: localization, disc: voitingImg + 'localization' }
+      { img: viewDeparts, disc: "Страница управления департаментами" },
+      { img: viewUsers, disc: "Просмотр сотрудников в департаменте" },
+      { img: addUser, disc: "Добавление сотрудника" },
+      { img: viewUserInfo, disc: "Просмотр карточки сотрудника" },
+      { img: login, disc: "Логин" },
+      { img: registration, disc: "Регистрация" },
+      { img: viewDocuments, disc: "Просмотр списка документов" },
+      { img: addDocument, disc: "Добавление документа" },
+      { img: viewImage, disc: "Просмотр изображений" },
+      { img: viewPDF, disc: "Просмотр PDF-файлов" },
+      { img: addApplication, disc: "Создание голосования для документа" },
+      { img: viewAppsOnReview, disc: "Просмотр документов находящихся на расмотрении для голосования" },
+      { img: voiting, disc: "Голосование За/Против документа, находящегося в расмотрен" },
+      { img: localization, disc: "Локализация приложения EN/RU" }
     ],
     gitHubLink: 'https://github.com/GeorgiusDomna/Voting-System',
   },
   {
-    titel: "projects.weather.title",
+    titel: "Прогноз погоды",
     stackFront: 'React, JavaScript, GraphQL, Apollo Client, CSS/SASS, HTML',
     stackBack: 'Next.js, JavaScript, Apollo Server',
     imgPreview: forecastMini,

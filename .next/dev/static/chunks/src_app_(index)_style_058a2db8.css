@@ -1,0 +1,60 @@
+/* [project]/src/app/(index)/style.css [app-client] (css) */
+.main {
+  background-color: var(--page-bg);
+  min-height: 695px;
+  color: var(--page-text-color);
+  text-align: center;
+  background-image: url("../media/header-bg.9fa291eb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  display: flex;
+}
+
+.main_wrapper {
+  max-width: 660px;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.main_titel {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.main_titel strong {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.main_titel em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.main_text {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.333em;
+}
+
+.main_text p + p {
+  margin-top: 1em;
+}
+
+@media (max-width: 620px) {
+  .main_titel {
+    font-size: 30px;
+  }
+
+  .main_titel strong {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=src_app_%28index%29_style_058a2db8.css.map*/

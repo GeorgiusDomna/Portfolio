@@ -1,23 +1,26 @@
-import { NavLink } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
 import './style.css';
 
 interface IPreviewProjectProps {
   index: number;
   titel: string;
-  img: string;
+  img: StaticImageData;
 }
 
 const PreviewProject: React.FC<IPreviewProjectProps> = ({ index, titel, img }) => {
-  const { t } = useTranslation();
   
   return (
-    <NavLink className='linkProject' to={`/project/${index}`}>
+    <Link className='linkProject' href={`/projects/${index}`}>
       <li className="project">
-        <img src={img} alt="Project preview" className="project_img" />
-        <h3 className="project_titel">{t(titel)}</h3>
+        <Image 
+          src={img} 
+          alt="Project preview" 
+          className="project_img" 
+        />
+        <h3 className="project_titel">{titel}</h3>
       </li>
-    </NavLink>
+    </Link>
   );
 }
  

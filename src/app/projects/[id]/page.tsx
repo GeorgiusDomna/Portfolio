@@ -1,0 +1,45 @@
+import BtnGitHub from "../../../components/btnGitHub/BtnGitHub";
+import Slider from "../../../components/slider/Slider";
+
+import { projects } from "../../../helpers/projectList";
+import { IProject } from "../../../interfaces/IProject";
+
+import gitHub from '../../../assets/icons/git-btn.svg';
+import vercel from '../../../assets/icons/vercel.svg';
+import './style.css';
+
+interface pageProps {
+  params: Promise<{ id: string }>
+}
+
+const Page: React.FC<pageProps> = async({ params }) => {
+  const { id } = await params
+  const project: IProject = projects[Number(id)];
+
+  return (
+    <main className="selection">
+      <div className="container">
+        <div className="project-details">
+          <h1 className="titel-1">{project.titel}</h1>
+          <Slider sliderList={project.imgBig} />
+          {project.stackFront &&
+            <div className="project-details_desc">
+            <h3 className="project-details_desc-title">Frontend:</h3>
+            <p>{project.stackFront}</p>
+          </div>}
+          {project.stackBack &&
+            <div className="project-details_desc">
+            <h3 className="project-details_desc-title">Backend:</h3>
+            <p>{project.stackBack}</p>
+          </div>}
+          <div className="btnsLink">
+            {project.gitHubLink && <BtnGitHub name='GitHub repo' link={project.gitHubLink} icon={gitHub} />}
+            {project.vercelLink && <BtnGitHub name='Vercel deploy' link={project.vercelLink} icon={vercel} />}
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export default Page;

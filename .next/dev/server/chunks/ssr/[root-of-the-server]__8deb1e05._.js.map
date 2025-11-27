@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/georgijdomanin/Desktop/dev/pets/Portfolio/src/app/%28index%29/page.tsx"],"sourcesContent":["import './style.css';\n\nconst Page = () => {\n\n  return (\n    <main className=\"main\">\n      <div className=\"main_wrapper\">\n        <h1 className=\"main_titel\">\n          <strong>Привет, меня зовут <em>Георгий</em> </strong> <br /> я frontend разработчик\n        </h1>\n        <div className=\"main_text\">\n          <p>примеры моих работ опубликованы на этом сайте</p>\n        </div>\n        <a href=\"https://hh.ru/resume/0dd2ce3fff0c68ffe00039ed1f7a316e6a7771\"\n          target='_blank'\n          rel='noreferrer'\n          className=\"btn\"\n        >\n          Посмотреть резюме\n        </a>\n      </div>\n    </main>\n  );\n}\n\nexport default Page;"],"names":[],"mappings":";;;;;;;AAEA,MAAM,OAAO;IAEX,qBACE,8OAAC;QAAK,WAAU;kBACd,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;;sCACZ,8OAAC;;gCAAO;8CAAmB,8OAAC;8CAAG;;;;;;gCAAY;;;;;;;wBAAU;sCAAC,8OAAC;;;;;wBAAK;;;;;;;8BAE9D,8OAAC;oBAAI,WAAU;8BACb,cAAA,8OAAC;kCAAE;;;;;;;;;;;8BAEL,8OAAC;oBAAE,MAAK;oBACN,QAAO;oBACP,KAAI;oBACJ,WAAU;8BACX;;;;;;;;;;;;;;;;;AAMT;uCAEe"}}]
+}

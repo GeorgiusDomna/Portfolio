@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/footer/style.css"],"sourcesContent":["/*footer*/\n.footer {\n  margin-top: auto;\n  padding: 30px 0 40px;\n  background: var(--footer-bg);\n  color: var(--header-text);\n}\n.footer_wrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  row-gap: 27px;\n}\n.social {\n  display: flex;\n  column-gap: 30px;\n  align-items: center;\n}\n.copyright {\n  font-size: 15px;\n}\n.copyright .linkBio {\n  color: white;\n}\n\n.linkBio {\n  transition: opacity 0.2s ease-in;\n}\n.linkBio:hover {\n  opacity: 0.8;\n}\n\n@media (max-width: 620px) {\n\n   .footer {\n    padding: 40px 0 30px;\n  }\n  .footer_wrapper {\n    row-gap: 20px;\n  }\n  .solcial_item {\n    width: 28px;\n  }\n  .social {\n    column-gap: 20px;\n  }\n}"],"names":[],"mappings":"AACA;;;;;;;AAMA;;;;;;;AAMA;;;;;;AAKA;;;;AAGA;;;;AAIA;;;;AAGA;;;;AAIA;EAEG;;;;EAGD;;;;EAGA;;;;EAGA"}}]
+}

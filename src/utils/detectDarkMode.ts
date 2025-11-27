@@ -6,6 +6,7 @@
  * и `false` в противном случае.
  */
 export const detectDarkMode = () => {
+  if (typeof window === 'undefined') return false;
   if (
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches) {

@@ -1,5 +1,4 @@
 @import "./reset.css";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;700&display=swap');
 
 :root {
   --light-bg: linear-gradient(to left, #dbe3e9 , #507092);

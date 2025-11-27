@@ -1,5 +1,7 @@
+'use client'
+
 import { useCallback, useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 import { IProjectImage } from '../../interfaces/IProject';
 import './style.css';
 
@@ -7,9 +9,8 @@ interface SliderProps {
   sliderList: IProjectImage[];
 }
 
-const Slider: React.FC<SliderProps> = ({sliderList}) => {
+const Slider: React.FC<SliderProps> = ({ sliderList }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { t } = useTranslation();
   const isPageMany: boolean = sliderList.length > 1;
   let dots: JSX.Element[] = [];
 
@@ -53,7 +54,7 @@ const Slider: React.FC<SliderProps> = ({sliderList}) => {
           &lt;
         </button>}
         <div className="gallerey-library-photos">
-          <img
+          <Image
             className={['gallerey-library-photos_item', isPageMany ? 'interactive-item' : ''].join(' ')}
             loading="lazy"
             src={sliderList[currentIndex].img}
@@ -66,7 +67,7 @@ const Slider: React.FC<SliderProps> = ({sliderList}) => {
           &gt;
         </button>}
       </div>
-      {sliderList[currentIndex].disc && <p className='gallerey-library_disc'>{t(sliderList[currentIndex].disc)}</p>}
+      {sliderList[currentIndex].disc && <p className='gallerey-library_disc'>{sliderList[currentIndex].disc}</p>}
       {isPageMany &&
         <div className="dot-container">
           {dots}
