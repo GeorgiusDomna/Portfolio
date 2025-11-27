@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useState } from 'react';
+import { ReactElement, useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { IProjectImage } from '../../interfaces/IProject';
 import './style.css';
@@ -12,7 +12,7 @@ interface SliderProps {
 const Slider: React.FC<SliderProps> = ({ sliderList }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const isPageMany: boolean = sliderList.length > 1;
-  let dots: JSX.Element[] = [];
+  let dots: ReactElement[] = [];
 
   const switchSlider = useCallback((action: boolean) => {
     setCurrentIndex(prevIndex => (
